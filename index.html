@@ -5,22 +5,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>BigDrop Academy</title>
         <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <nav>
+            <div class="logo-container">
+                <img src="images/newlogo.png" alt="BigDrop Academy Logo">
+                <span>BigDrop Academy</span>
+            </div>
             <ul>
                 <li><a href="#index">Home</a></li>
                 <li><a href="#course">Course</a>
-                    <ul>
+                    <ul class="dropdown">
                         <li><a href="#">Programming</a>
-                            <ul>
+                            <ul class="dropdown">
                                 <li><a href="#java">Programming in Java</a></li>
                                 <li><a href="#dotnet">.Net Programming</a></li>
                                 <li><a href="#html">Web Page Creation with HTML</a></li>
                             </ul>
                         </li>
                         <li><a href="#">Office Tools</a>
-                            <ul>
+                            <ul class="dropdown">
                                 <li><a href="#ms-office">Microsoft Office</a></li>
                             </ul>
                         </li>
@@ -29,35 +35,70 @@
                 <li><a href="#about-us">About Us</a></li>
                 <li><a href="#sitemap">Sitemap</a></li>
                 <li><a href="#privacy-policy">Privacy Policy</a></li>
-            </ul>
-            <button>Sign in</button>
+                <button>Sign in</button>
+            </ul>            
         </nav>
+
         <header>
             <h1>Unlock Your Potential with Our Courses!</h1>
-            <h2>Gain the skils you need to excel in today's fast-paced world.</h2>
+            <h3>Gain the skills you need to excel in today's fast-paced world.</h3>
             <button>Get Started</button>
         </header>
-        <div>
-            <h1>The perfect platform to boost your technical skills</h1>
-            <h2>Students</h2>
-            <p>Ready to start your career? BigDrop Academy's hand-on courses in programming, web development, and office tools will equip you with the skills to ace your exams and land your first job.</p>
-            <h2>Professionals</h2>
-            <p>Upgrade your skills and stay ahead in your field. BigDrop Academy's advanced courses help you refine your expertise or learn new technologies to advance your career.</p>
-        </div>
-        <div>
-            <h1>Stories from real people<h1>
-            <h3>Read inspiring stories from the BigDrop Academy community.</h3>
-            <h2>Freelancer to Developing Apps for NASA</h2>
-            <p>Bruce Wayne, Associate Software Engineer, Sarawak</p>
-            <h2>Lessons from a Product Owner turned Engineer</h2>
-            <p>Jean Grey, Software Developer @ Petronas, Kuala Lumpur</p>
-            <h2>From Student to Full-Stack Engineer in 11 Months</h2>
-            <p>Clark Kent, Ruby on Rails Developer, Sabah</p>
-            <h2>Technical Analyst to Front-End Engineer in 6 Months</h2>
-            <p>Selina Kyle, Front-End Engineer, Pulau Pinang</p>
-        </div>
+
+        <section>
+            <h2>Why Learn with BigDrop Academy:</h2>
+            <div>
+                <h3>Diverse Course Offerings</h3>
+                <p>Explore a diverse selection of courses designed to enhance skills and empower learners at every stage of their career journey.</p>
+            </div>
+            <div>
+                <h3>Flexible Learning Options</h3>
+                <p>Whether you're a student, working professional, or adult learner, our courses fit your schedule and goals.</p>
+            </div>
+            <div>
+                <h3>Expert Instructors</h3>
+                <p>Learn from industry professionals with years of experience, dedicated to guiding you through each course.</p>
+            </div>
+            <div>
+                <h3>Certification for Career Growth</h3>
+                <p>Earn recognized certificates that boost your resume and open up new career opportunities.</p>
+            </div>
+            <button>Start Learning Now</button>
+        </section>
+
+        <section>
+            <h2>Here is what our alumni say about BigDrop Academy:</h2>
+            <div>
+                <h3>Bruce Wayne in Singapore</h3>
+                <p>Software Engineer at Google</p>
+                <blockquote>"Changing careers can be daunting. I only gained confidence in my coding skills after completing the extensive, hands-on lessons at BigDrop Academy. Within a year, I landed a high-paying job as a Software Engineer. BigDrop Academy truly transformed my life."</blockquote>
+            </div>
+            <div>
+                <h3>Mark Scout in Malaysia</h3>
+                <p>Data Refiner Engineer at Lumon</p>
+                <blockquote>"BigDrop Academy was the gateway to my career as a data refiner engineer. Its well-structured curriculum took me from a complete beginner to a confident coder. It provided everything I needed to land my first engineer job at an amazing company."</blockquote>
+            </div>
+            <div>
+                <h3>Jean Grey in Thailand</h3>
+                <p>Software Engineer at Spotify</p>
+                <blockquote>I&#39;ve always struggled with learning to code. I tried many courses, but BigDrop Academy's program was the one that truly stuck. Studying programming, along with data structures and algorithms, gave me the skills and confidence I needed to land my dream job as a software engineer.</blockquote>
+            </div>
+        </section>
+
+        <footer>
+            <div>
+                <p>&copy; 2025 BigDrop Academy. All rights reserved.</p>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#index">Home</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#contact-us">Contact Us</a></li>
+                    <li><a href="#sitemap">Sitemap</a></li>
+                    <li><a href="#privacy-policy">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </footer>
+        <script src="script.js"></script>            
     </body>
-    <footer>
-        <p>&copy; 2025 BigDrop Academy. All rights reserved.</p>
-    </footer>
 </html>
