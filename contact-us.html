@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="sitemap-page">
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="#">Course</a>
+                    <ul>
+                        <li><a href="#">Programming</a>
+                            <ul>
+                                <li><a href="#">Programming in Java</a></li>
+                                <li><a href="#">.Net Programming</a></li>
+                                <li><a href="#">Web Page Creation with HTML</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Office Tools</a>
+                            <ul>
+                                <li><a href="#">Microsoft Office</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section class="contact-title">
+            <h1>Contact Us</h1>
+            <h2>Have a question or feedback? Get in touch with us!</h2>
+        </section>
+
+        <section class="contact-form">
+            <form action="#" method="POST">
+                <label for="category">Category:</label>
+                <select id="category" name="category" required>
+                    <option value="" disabled selected>Select a category</option> <!-- Default option -->
+                    <option value="bug">Bug Report</option>
+                    <option value="feedback">General Feedback</option>
+                    <option value="suggestion">Suggestion</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <section class="contact-info">
+            <h3>BigDrop Academy</h3>
+            <p>66, Jalan Raja Ekram, Kampung Jawa, 30300 Ipoh, Perak, Malaysia.<br>
+                <strong>Phone:</strong> 05-242 6323<br>
+                <strong>Email:</strong> <a href="mailto:support@bigdropacademy.com">support@bigdropacademy.com</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; BigDrop Academy. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
