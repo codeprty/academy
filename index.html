@@ -1,69 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>BigDrop Academy</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <div>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#sitemap">Sitemap</a></li>
-                    <li><a href="#policy">Privacy Policy</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div>
-            <header>
-                <h1>Unlock Your Potential with Our Courses!</h1>
-                <h3>Gain the skills you need to excel in today's fast-paced world.</h3>
-            </header>
-        </div>
-        <div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BigDrop Academy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="course.html">Course</a>
+                    <ul>
+                        <li><a href="#">Programming</a>
+                            <ul>
+                                <li><a href="#">Programming in Java</a></li>
+                                <li><a href="#">.Net Programming</a></li>
+                                <li><a href="#">Web Page Creation with HTML</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Office Tools</a>
+                            <ul>
+                                <li><a href="#">Microsoft Office</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="main-header">
+            <h1>Unlock Your Potential with Our Courses!</h1>
+            <h2>Gain the skills you need to excel in today's fast-paced world.</h2>
+            <button>Get Started</button>
+        </section>
+
+        <section id="why-learn">
             <h2>Why Learn with BigDrop Academy:</h2>
-            <div>
-                <h3>Diverse Course Offerings</h3>
-                <p>Explore a diverse selection of courses designed to enhance skills and empower learners at every stage of their career journey.</p>
+            <div class="image-item">
+                <div class="image-gallery">
+                    <img src="https://codeprty.github.io/academy/images/course.svg" alt="Diverse Course Offerings">
+                </div>
+                <div class="image-text">
+                    <h3>Diverse Course Offerings</h3>
+                    <p>Explore a diverse selection of courses designed to enhance skills and empower learners.</p>
+                </div>
             </div>
-            <div>
-                <h3>Flexible Learning Options</h3>
-                <p>Whether you're a student, working professional, or adult learner, our courses fit your schedule and goals.</p>
+            <div class="image-item">
+                <div class="image-gallery">
+                    <img src="https://codeprty.github.io/academy/images/flexible.svg" alt="Flexible Learning Options">
+                </div>
+                <div class="image-text">
+                    <h3>Flexible Learning Options</h3>
+                    <p>Our courses fit your schedule and goals, whether you're a student, professional, or adult
+                        learner.</p>
+                </div>
             </div>
-            <div>
-                <h3>Expert Instructors</h3>
-                <p>Learn from industry professionals with years of experience, dedicated to guiding you through each course.</p>
+            <div class="image-item">
+                <div class="image-gallery">
+                    <img src="https://codeprty.github.io/academy/images/expert.svg" alt="Expert Instructors">
+                </div>
+                <div class="image-text">
+                    <h3>Expert Instructors</h3>
+                    <p>Learn from industry professionals dedicated to guiding you through each course.</p>
+                </div>
             </div>
-            <div>
-                <h3>Certification for Career Growth</h3>
-                <p>Earn recognized certificates that boost your resume and open up new career opportunities.</p>
+            <div class="image-item">
+                <div class="image-gallery">
+                    <img src="https://codeprty.github.io/academy/images/progress.svg"
+                        alt="Certification for Career Growth">
+                </div>
+                <div class="image-text">
+                    <h3>Certification for Career Growth</h3>
+                    <p>Earn recognized certificates that enhance your resume and career prospects.</p>
+                </div>
             </div>
-        </div>
-        <div>
-            <h2>Here is what our alumni say about BigDrop Academy:</h2>
-            <div>
-                <h3>Bruce Wayne in Singapore</h3>
-                <p>Software Engineer at Google</p>
-                <blockquote>"Changing careers can be daunting. I only gained confidence in my coding skills after completing the extensive, hands-on lessons at BigDrop Academy. Within a year, I landed a high-paying job as a Software Engineer. BigDrop Academy truly transformed my life."</blockquote>
+        </section>
+
+        <section id="alumni-section">
+            <h2>What Our Alumni Say:</h2>
+            <div class="testimonial-wrapper">
+                <div class="testimonial-container">
+                    <div class="testimonial">
+                        <img src="https://codeprty.github.io/academy/images/testimonial1.png" alt="Shao Kahn">
+                        <div class="testimonial-content">
+                            <h3>Shao Kahn</h3>
+                            <h4>Software Engineer at <strong>Google</strong></h4>
+                            <blockquote>"BigDrop Academy transformed my career by providing hands-on lessons that gave
+                                me confidence in coding."</blockquote>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <img src="https://codeprty.github.io/academy/images/testimonial2.png" alt="Gianna Michaels">
+                        <div class="testimonial-content">
+                            <h3>Gianna Michaels</h3>
+                            <h4>Data Engineer at <strong>Lumon</strong></h4>
+                            <blockquote>"The structured curriculum took me from a beginner to a confident coder, landing
+                                my first engineering job."</blockquote>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <img src="https://codeprty.github.io/academy/images/testimonial3.png" alt="Emma Frost">
+                        <div class="testimonial-content">
+                            <h3>Emma Frost</h3>
+                            <h4>Software Engineer at <strong>Spotify</strong></h4>
+                            <blockquote>"BigDrop Academy's program helped me master programming, data structures, and
+                                algorithms."</blockquote>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h3>Mark Scout in Malaysia</h3>
-                <p>Data Refiner Engineer at Lumon</p>
-                <blockquote>"BigDrop Academy was the gateway to my career as a data refiner engineer. Its well-structured curriculum took me from a complete beginner to a confident coder. It provided everything I needed to land my first engineer job at an amazing company."</blockquote>
+        </section>
+
+        <section id="join-us">
+            <div class="join-us-content">
+                <div class="join-us-image">
+                    <img src="https://codeprty.github.io/academy/images/signup.svg" alt="Sign Up">
+                </div>
+                <div class="join-us-text">
+                    <h2>Joins us now!</h2>
+                    <p>If you've made it this far, you must be at least a little curious. Sign up and take the first
+                        step toward your goals.</p>
+                    <button>Sign Up</button>
+                </div>
             </div>
-            <div>
-                <h3>Jean Grey in Thailand</h3>
-                <p>Software Engineer at Spotify</p>
-                <blockquote>"I've always struggled with learning to code. I tried many courses, but BigDrop Academy's program was the one that truly stuck. Studying programming, along with data structures and algorithms, gave me the skills and confidence I needed to land my dream job as a software engineer."</blockquote>
-            </div>
-        </div>
-        <footer>
-            <p>&copy; 2025 BigDrop Academy. All rights reserved.</p>
-        </footer>
-        <script src="script.js"></script>
-    </body>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; BigDrop Academy. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
 </html>
