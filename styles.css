@@ -1,6 +1,6 @@
-/* Global Styles */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +19,7 @@ body {
     color: #333;
 }
 
-/*Home Page */
+/* Home Page */
 /* Header & Navigation */
 header {
     position: fixed;
@@ -304,17 +304,6 @@ footer p {
 }
 
 /* About Us Page */
-.about-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
-}
-
-.about-container {
-    display: block;
-}
-
-/* About Us Page */
 .about-page {
     background-color: #fafdff;
 }
@@ -395,7 +384,6 @@ footer p {
     color: #555;
 }
 
-/* Second row styling */
 .team-container .team-member:nth-child(n + 6) {
     grid-column: span 1;
 }
@@ -464,7 +452,7 @@ footer p {
     padding: 0;
 }
 
-/* Main Menu Styling (Reduced font size) */
+/* Main Menu Styling */
 .sitemap-list>li {
     font-size: 1.6rem;
     font-weight: bold;
@@ -494,7 +482,7 @@ footer p {
     color: #343a40;
 }
 
-/* Submenu Box */
+/* Submenu Box Styling */
 .sitemap-list ul {
     list-style-type: none;
     padding: 4px 0;
@@ -516,14 +504,15 @@ footer p {
     width: 100%;
 }
 
-/* Links */
+/* Links Styling */
 .sitemap-list a {
     text-decoration: none;
     color: #003366;
     display: block;
     width: 100%;
     padding: 8px 0;
-    transition: background-color 0.3s ease-in-out, font-weight 0.3s ease-in-out, transform 0.2s ease-in-out;
+    transition: background-color 0.3s ease-in-out, font-weight 0.3s ease-in-out,
+        transform 0.2s ease-in-out;
 }
 
 /* Hover Effect (Lift effect on submenu) */
@@ -531,10 +520,9 @@ footer p {
     background-color: #ffcccc;
     font-weight: bold;
     transform: translateY(-5px);
-    /* Lift effect */
 }
 
-/* Contact Page */
+/* Contact Us Page */
 .contact-page {
     background-color: #fafdff;
 }
@@ -561,7 +549,7 @@ footer p {
     margin-bottom: 20px;
 }
 
-/* Contact Form */
+/* Contact Form Styling */
 .contact-form {
     max-width: 600px;
     margin: -40px auto 40px;
@@ -595,7 +583,7 @@ footer p {
 
 .contact-form button {
     padding: 12px 20px;
-    background-color: #9694FF;
+    background-color: #9694ff;
     color: white;
     font-size: 1rem;
     border: none;
@@ -606,10 +594,10 @@ footer p {
 }
 
 .contact-form button:hover {
-    background-color: #3D3BF3;
+    background-color: #3d3bf3;
 }
 
-/* Contact Information */
+/* Contact Information Styling */
 .contact-info {
     text-align: center;
     margin-top: 60px;
@@ -645,7 +633,7 @@ footer p {
     background-color: #fafdff;
 }
 
-/* Privacy Policy Container for content */
+/* General container for content */
 .privacy-policy-container {
     width: 100%;
     max-width: 900px;
@@ -728,4 +716,381 @@ footer p {
     line-height: 1.6;
     margin-bottom: 15px;
     color: #2c3e50;
+}
+
+/* Course Page */
+.course-page {
+    background-color: #ffffff;
+}
+
+#course-title {
+    margin-top: 100px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 900;
+    letter-spacing: -1px;
+    color: #333;
+}
+
+.tab-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    background-color: #e3e3e3;
+    width: fit-content;
+}
+
+.tab-menu .tab-button {
+    flex: 1;
+    border: none;
+    text-decoration: none;
+    padding: 10px 60px;
+    background-color: #e3e3e3;
+    color: #333;
+    text-align: center;
+    font-weight: 600;
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+
+.tab-menu .tab-button:hover {
+    background-color: #e1ad01;
+}
+
+/* Optional: Adjust active tab */
+.tab-menu .tab-button.active {
+    background-color: #c89600;
+    color: white;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* General Styling for Tab Content */
+.tab-content {
+    display: none;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Heading Styling for All Sections */
+.tab-content h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #333;
+    padding-bottom: 5px;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tab-content h3 {
+    font-size: 22px;
+    color: #0073e6;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-left: 5px solid #0073e6;
+    padding-left: 10px;
+}
+
+/* Paragraph Styling */
+.tab-content p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+#enquiry p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #333;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* List Styling */
+.tab-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tab-content ul li {
+    font-size: 16px;
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.tab-content ul li::before {
+    content: "✔";
+    color: #28a745;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    font-size: 18px;
+}
+
+/* Override checkmark for ul with class "bullet" */
+.tab-content ul.bullet li::before {
+    content: "•";
+    color: inherit;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/* Section Styling */
+.section {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px auto;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: left;
+}
+
+#duration a {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0073e6;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 2px solid #0073e6;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+#duration a:hover {
+    background-color: #0073e6;
+    color: white;
+}
+
+/* Registration Form Styling */
+#registration {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#registration h3 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #333;
+    padding-bottom: 5px;
+}
+
+#registration form {
+    display: flex;
+    flex-direction: column;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ccc;
+    /* Adds border around the form */
+}
+
+#registration label {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+    cursor: pointer;
+}
+
+#registration input,
+#registration select,
+#registration textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#registration textarea {
+    resize: none;
+}
+
+#registration input:focus,
+#registration select:focus,
+#registration textarea:focus {
+    border-color: #0073e6;
+    outline: none;
+}
+
+/* Terms & Conditions Checkbox */
+#registration .terms-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#registration .terms-container label {
+    position: relative;
+    top: -5px;
+    font-size: 0.8rem;
+}
+
+#registration input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #0073e6;
+    margin: 0;
+}
+
+/* Link inside Terms & Conditions */
+#registration .terms-container a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+#registration .terms-container a:hover {
+    text-decoration: underline;
+}
+
+/* Submit Button */
+#registration button {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0073e6;
+    background: transparent;
+    padding: 10px 15px;
+    border: 2px solid #0073e6;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#registration button:hover {
+    background-color: #0073e6;
+    color: white;
+}
+
+/* Toggle Sections */
+.toggle-title {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle-icon {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0073e6;
+}
+
+/* Course Schedule Page */
+/* Weekly Schedule Table */
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid #ddd;
+}
+
+/* Table Header */
+.schedule-table thead {
+    background-color: #0073e6;
+    color: #ffffff;
+    text-align: left;
+}
+
+.schedule-table th {
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-right: 2px solid #ffffff;
+}
+
+/* Table Rows */
+.schedule-table tbody tr {
+    border-bottom: 1px solid #ddd;
+    transition: background 0.3s ease;
+}
+
+.schedule-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.schedule-table tbody tr:hover {
+    background-color: #e3f2fd;
+}
+
+/* Table Data Cells */
+.schedule-table td {
+    padding: 12px;
+    font-size: 15px;
+    color: #333;
+    vertical-align: top;
+    border-right: 2px solid #ddd;
+}
+
+/* Remove right border for last column to avoid double borders */
+.schedule-table th:last-child,
+.schedule-table td:last-child {
+    border-right: none;
+}
+
+/* Styling the Bullet Point Lists Inside the Table */
+.schedule-table ul.bullet {
+    padding-left: 20px;
+}
+
+.schedule-table ul.bullet li {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 5px;
+    position: relative;
+    padding-left: 15px;
+    color: #333;
+}
+
+.schedule-table ul.bullet li::before {
+    content: "•";
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.tab-content ul.no-style {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.tab-content ul.no-style li {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.tab-content ul.no-style li::before {
+    content: none;
 }
