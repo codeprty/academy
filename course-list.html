@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="#">Course</a>
+          <ul>
+            <li><a href="#">Programming</a>
+              <ul>
+                <li><a href="java-course.html">Programming in Java</a></li>
+                <li><a href="dotnet-course.html">.Net Programming</a></li>
+                <li><a href="html-course.html">Web Page Creation with HTML</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Office Tools</a>
+              <ul>
+                <li><a href="#">Microsoft Office</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="sitemap.html">Sitemap</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Container -->
+  <main class="course-page">
+    <section>
+      <h1 id="course-title">Explore Our Courses</h1>
+    </section>
+
+    <div class="course-listing-container">
+
+      <!-- Search Bar -->
+      <div class="search-bar">
+        <input type="text" id="course-search" placeholder="Search for a course...">
+      </div>
+
+      <!-- Course Category Filters -->
+      <div class="tab-menu">
+        <button class="filter-button active" data-filter="all">ALL</button>
+        <button class="filter-button" data-filter="programming">PROGRAMMING</button>
+        <button class="filter-button" data-filter="office-tools">OFFICE</button>
+      </div>
+
+      <!-- Course Listing Grid -->
+      <div class="course-grid">
+        <!-- Course Item -->
+        <div class="course-item" data-category="programming">
+          <img src="https://codeprty.github.io/academy/images/course-list1.png" alt="Java Course">
+          <h2>Java Programming</h2>
+          <p>Master Java with hands-on coding exercises.</p>
+          <a href="java-course.html" class="btn">Learn More</a>
+        </div>
+
+        <div class="course-item" data-category="programming">
+          <img src="https://codeprty.github.io/academy/images/course-list2.png" alt=".Net Course">
+          <h2>.Net Development</h2>
+          <p>Build powerful applications with C# and the .NET framework.</p>
+          <a href="dotnet-course.html" class="btn">Learn More</a>
+        </div>
+
+        <div class="course-item" data-category="programming">
+          <img src="https://codeprty.github.io/academy/images/course-list3.png" alt="HTML Course">
+          <h2>HTML Essentials</h2>
+          <p>Learn web development with semantic markup.</p>
+          <a href="html-course.html" class="btn">Learn More</a>
+        </div>
+
+        <div class="course-item" data-category="office-tools">
+          <img src="https://codeprty.github.io/academy/images/course-list4.png" alt="MS Word Course">
+          <h2>Microsoft Word Basics</h2>
+          <p>Enhance your document formatting skills.</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; BigDrop Academy. All rights reserved.</p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
