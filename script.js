@@ -29,7 +29,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-
 // ✅ jQuery for Course Listing & Course Pages
 $(document).ready(function () {
     // Course Listing Page: Handle tab selection & filtering
@@ -73,4 +72,84 @@ $(document).ready(function () {
             return text === "+" ? "−" : "+";
         });
     });
+});
+
+// ✅ Lead Registration Form Validation & Submission
+document.getElementById("leadForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    let isValid = true;
+
+    // Clear previous error messages
+    document.querySelectorAll(".error").forEach(el => el.textContent = "");
+
+    // Validate Full Name
+    const fullName = document.getElementById("full-name");
+    if (!fullName.value.trim()) {
+        document.getElementById("fullNameError").textContent = "Full Name is required.";
+        isValid = false;
+    }
+
+    // Validate Email
+    const email = document.getElementById("email");
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!email.value.trim() || !emailPattern.test(email.value.trim())) {
+        document.getElementById("emailError").textContent = "Please enter a valid email address.";
+        isValid = false;
+    }
+
+    // Validate Phone Number
+    const phone = document.getElementById("phone");
+    if (!phone.value.trim() || !/^\d{10}$/.test(phone.value.trim())) {
+        document.getElementById("phoneError").textContent = "Please enter a 10-digit phone number without separators.";
+        isValid = false;
+    }
+
+    // Validate Course Interest
+    const courseInterest = document.getElementById("course-interest");
+    if (!courseInterest.value) {
+        document.getElementById("courseInterestError").textContent = "Please select a course.";
+        isValid = false;
+    }
+
+    // Validate Learning Mode
+    const learningMode = document.getElementById("learning-mode");
+    if (!learningMode.value) {
+        document.getElementById("learningModeError").textContent = "Please select a learning mode.";
+        isValid = false;
+    }
+
+    // Validate Start Date
+    const startDate = document.getElementById("start-date");
+    if (!startDate.value) {
+        document.getElementById("startDateError").textContent = "Please select a preferred start date.";
+        isValid = false;
+    }
+
+    // Validate Referral Source
+    const referSource = document.getElementById("refer-source");
+    if (!referSource.value) {
+        document.getElementById("referSourceError").textContent = "Please select how you heard about us.";
+        isValid = false;
+    }
+
+    // Form submission with Ajax if valid
+    if (isValid) {
+        const formData = new FormData(this);
+        fetch('URL', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                window.location.href = 'thank-you.html';
+            } else {
+                alert('Submission failed. Please try again!');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('An error occurred. Please try again!');
+        });
+    }
 });

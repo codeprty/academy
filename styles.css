@@ -15,12 +15,13 @@ body {
   flex-direction: column;
   font-size: 16px;
   line-height: 1.6;
-  background-color: #F6F0F0;
+  background-color: #f6f0f0;
   color: #333;
 }
 
 html {
   scroll-behavior: smooth;
+  overflow-y: scroll;
 }
 
 main {
@@ -261,7 +262,7 @@ nav ul ul ul {
 /* Join Us Section */
 #join-us {
   padding: 40px 20px;
-  background-color: #F6F0F0;
+  background-color: #f6f0f0;
 }
 
 .join-us-content {
@@ -490,9 +491,9 @@ footer p {
 /* Submenu Box Styling */
 .sitemap-list ul {
   list-style-type: none;
-  padding: 4px 0;
+  padding: 2px 0;
   margin-top: 5px;
-  background-color: #e6f0f7;
+  background-color: #FBFBFB;
   border-radius: 8px;
   width: 100%;
   max-width: 450px;
@@ -515,7 +516,7 @@ footer p {
   color: #003366;
   display: block;
   width: 100%;
-  padding: 8px 0;
+  padding: 4px 0;
   transition: background-color 0.3s ease-in-out, font-weight 0.3s ease-in-out,
     transform 0.2s ease-in-out;
 }
@@ -557,18 +558,22 @@ footer p {
 /* Contact Form Styling */
 .contact-form {
   max-width: 600px;
-  margin: -40px auto 40px;
-  background-color: #fff;
+  margin: -40px auto 50px;
   padding: 20px;
+  background: #f8f9fa;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border: 2px solid #ccc;
 }
 
 .contact-form label {
-  display: block;
-  font-size: 1rem;
-  margin-bottom: 5px;
-  color: #343a40;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #333;
+  cursor: pointer;
 }
 
 .contact-form input,
@@ -576,18 +581,27 @@ footer p {
 .contact-form textarea {
   width: 100%;
   padding: 10px;
-  margin-bottom: 15px;
-  font-size: 1rem;
-  border-radius: 4px;
-  border: 1px solid #ddd;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
 .contact-form textarea {
-  resize: vertical;
+  resize: none;
 }
 
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: #0073e6;
+  outline: none;
+}
+
+/* Submit Button */
 .contact-form button {
-  font-size: 1rem;
+  display: inline-block;
+  font-size: 16px;
   font-weight: bold;
   color: #0073e6;
   background: transparent;
@@ -597,7 +611,7 @@ footer p {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   width: 100%;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .contact-form button:hover {
@@ -609,22 +623,21 @@ footer p {
 .contact-info {
   text-align: center;
   margin-top: 60px;
-  background-color: #e6f0f7;
+  background-color: #E5E3D4;
   padding: 20px;
   border-radius: 8px;
 }
 
 .contact-info h3 {
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   color: #343a40;
-  margin-bottom: 5px;
   letter-spacing: -1px;
 }
 
 .contact-info p {
   font-size: 1rem;
   color: #555;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
 }
 
 .contact-info a {
@@ -662,7 +675,8 @@ footer p {
 }
 
 /* Section Titles */
-.section-title, .subsection-title {
+.section-title,
+.subsection-title {
   font-size: 18px;
   font-weight: bold;
   color: #2c3e50;
@@ -678,7 +692,8 @@ footer p {
 }
 
 /* Paragraphs */
-p, .intro {
+p,
+.intro {
   font-size: 14px;
   line-height: 1.6;
   margin-bottom: 15px;
@@ -1109,48 +1124,14 @@ p, .intro {
   text-align: center;
 }
 
-/* Page Title */
-.page-title {
-  font-size: 28px;
-  color: #2c3e50;
-  margin-bottom: 20px;
-}
-
-/* Search Bar */
-.search-bar input {
-  width: 100%;
-  max-width: 400px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-/* Course Filters */
-.course-filters {
-  margin: 20px 0;
-}
-
-.filter-btn {
-  padding: 8px 15px;
-  margin: 5px;
-  border: none;
-  background-color: #2980b9;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.filter-btn:hover {
-  background-color: #1c5d8e;
-}
-
-/* Course Listing Page */
-.course-listing-container {
-  max-width: 1100px;
-  margin: 40px auto;
-  padding: 0 20px;
+.course-title h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: -1px;
+  color: #343a40;
+  margin: 100px auto 40px;
   text-align: center;
+  letter-spacing: -1px;
 }
 
 /* Search Bar */
@@ -1245,4 +1226,292 @@ p, .intro {
   object-fit: contain; /* Ensures full image is visible */
   display: block;
   margin: 0 auto; /* Centers the image */
+}
+
+/* Thank You page */
+.thank-you-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh; /* Adjust based on header/footer height */
+  text-align: center;
+}
+
+/* Styling the Main Message */
+#thank-you-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+/* Styling the Subtext */
+#thank-you-subtitle {
+  font-size: 20px;
+  color: #34495e;
+  font-weight: 500;
+}
+
+/* Lead Registration Page Styling */
+.lead-title {
+  max-width: 800px;
+  margin: 80px auto 40px; /* Matched spacing with contact-title */
+  padding: 20px;
+  text-align: center;
+}
+
+.lead-title h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: -1px;
+  color: #343a40;
+}
+
+.lead-title h2 {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Lead Registration Form Styling */
+.registration-form {
+  max-width: 600px;
+  margin: -40px auto 50px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border: 2px solid #ccc;
+}
+
+.registration-form label {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #333;
+  cursor: pointer;
+}
+
+.registration-form input,
+.registration-form select,
+.registration-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.registration-form textarea {
+  resize: none;
+}
+
+.registration-form input:focus,
+.registration-form select:focus,
+.registration-form textarea:focus {
+  border-color: #0073e6;
+  outline: none;
+}
+
+.terms-container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+}
+
+/* ✅ Adjusts the label text size and alignment */
+.terms-container label {
+  font-size: 0.8rem; /* Slightly smaller text */
+  line-height: 1.2;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-top: 1px;
+}
+
+
+/* ✅ Ensure checkbox stays aligned */
+.terms-container input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #0073e6;
+  margin: 0;
+  vertical-align: middle;
+}
+
+/* Submit Button */
+.registration-form button {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #0073e6;
+  background: transparent;
+  padding: 12px 20px;
+  border: 2px solid #0073e6;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.registration-form button:hover {
+  background-color: #0073e6;
+  color: white;
+}
+
+/* ✅ Error message styling */
+.error {
+  color: red;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-top: 5px;
+  display: block;
+  clear: both; /* Ensures the error appears below */
+}
+
+
+
+/* Admin page */
+/* Center the H1 Title */
+.admin-container h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-top: 100px; /* Set margin top */
+  margin-bottom: 20px;
+}
+
+/* Center the Search Box */
+.search-container {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.search-bar {
+  display: inline-block;
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+
+/* Table Container */
+.table-container {
+  overflow-x: auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Table */
+.table-container table {
+  width: 80%; /* Reduced width */
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+
+/* Table Header */
+.table-container thead {
+  background-color: #0073e6;
+  color: white;
+}
+
+.table-container th {
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #ccc;
+  white-space: nowrap; /* Prevents unwanted wrapping */
+}
+
+/* Table Body */
+.table-container td {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  text-align: left;
+  white-space: nowrap; /* Prevents wrapping */
+}
+
+/* Allow Wrapping in Course & Comments */
+.table-container td:nth-child(5), /* Course */
+.table-container td:nth-child(9) { /* Comments */
+  white-space: normal;
+  word-break: break-word;
+  max-width: 200px;
+}
+
+/* Alternating Row Colors */
+.table-container tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Edit Button (Green) */
+.edit-btn {
+  background-color: #28a745; /* Bootstrap Green */
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.edit-btn:hover {
+  background-color: #218838; /* Darker Green */
+}
+
+/* Delete Button (Darker Red) */
+.delete-btn {
+  background-color: #b22222; /* Firebrick Red */
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.delete-btn:hover {
+  background-color: #8b0000; /* Darker Red */
+}
+
+/* Add Lead Button - Right Aligned */
+.add-button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  padding-right: 10%;
+}
+
+.add-btn {
+  background-color: white; /* White background */
+  color: #0073e6; /* Blue text */
+  border: 2px solid #0073e6; /* Blue border */
+  padding: 6px 12px; /* Same padding as Edit/Delete buttons */
+  font-size: 14px; /* Same font size */
+  border-radius: 4px; /* Same border radius */
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.add-btn:hover {
+  background-color: #0073e6; /* Blue background on hover */
+  color: white; /* White text on hover */
 }
