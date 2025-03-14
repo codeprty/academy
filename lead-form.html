@@ -39,73 +39,75 @@
   </header>
 
   <main>
+    
     <section class="lead-title">
-        <h1>Get Started with Coding Today!</h1>
-        <h2>Register your interest, and we'll help you begin your coding journey!</h2>
+      <h1>Get Started with Coding Today!</h1>
+      <h2>Register your interest, and we'll help you begin your coding journey!</h2>
     </section>
 
+    <!-- Lead Generation Form -->
     <section class="registration-form">
-        <form id="leadForm" novalidate>
-            <label for="full-name">Full Name</label>
-            <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
-            <div class="error" id="fullNameError"></div>
+      <form id="leadForm" novalidate>
 
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            <div class="error" id="emailError"></div>
+        <label for="full-name">Full Name</label>
+        <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+        <div class="error" id="fullNameError"></div>
 
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
-            <div class="error" id="phoneError"></div>
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <div class="error" id="emailError"></div>
 
-            <label for="course-interest">Course Interest</label>
-            <select id="course-interest" name="course-interest" required>
-                <option value="">Select a course</option>
-                <option value="Programming in Java">Programming in Java</option>
-                <option value=".Net Programming">.Net Programming</option>
-                <option value="Web Page Creation with HTML">Web Page Creation with HTML</option>
-                <option value="Microsoft Office Basics">Microsoft Office Basics</option>
-            </select>
-            <div class="error" id="courseInterestError"></div>
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        <div class="error" id="phoneError"></div>
 
-            <label for="learning-mode">Preferred Learning Mode</label>
-            <select id="learning-mode" name="learning-mode" required>
-                <option value="">Select an option</option>
-                <option value="online">Online</option>
-                <option value="offline">In-Person</option>
-                <option value="hybrid">Hybrid</option>
-            </select>
-            <div class="error" id="learningModeError"></div>
+        <label for="course-interest">Course Interest</label>
+        <select id="course-interest" name="course-interest" required>
+          <option value="">Select a course</option>
+          <option value="Programming in Java">Programming in Java</option>
+          <option value=".Net Programming">.Net Programming</option>
+          <option value="Web Page Creation with HTML">Web Page Creation with HTML</option>
+          <option value="Microsoft Office Basics">Microsoft Office Basics</option>
+        </select>
+        <div class="error" id="courseInterestError"></div>
 
-            <label for="start-date">Preferred Start Date</label>
-            <input type="date" id="start-date" name="start-date" required>
-            <div class="error" id="startDateError"></div>
+        <label for="learning-mode">Preferred Learning Mode</label>
+        <select id="learning-mode" name="learning-mode" required>
+          <option value="">Select an option</option>
+          <option value="online">Online</option>
+          <option value="offline">In-Person</option>
+          <option value="hybrid">Hybrid</option>
+        </select>
+        <div class="error" id="learningModeError"></div>
 
-            <label for="refer-source">How Did You Hear About Us?</label>
-            <select id="refer-source" name="refer-source" required>
-                <option value="">Select an option</option>
-                <option value="Google">Google</option>
-                <option value="Facebook">Facebook</option>
-                <option value="Instagram">Instagram</option>
-                <option value="YouTube">YouTube</option>
-                <option value="LinkedIn">LinkedIn</option>
-                <option value="Other">Other</option>
-            </select>
-            <div class="error" id="referSourceError"></div>
+        <label for="start-date">Preferred Start Date</label>
+        <input type="date" id="start-date" name="start-date" required>
+        <div class="error" id="startDateError"></div>
 
-            <label for="comments">Additional Comments (Optional)</label>
-            <textarea id="comments" name="comments" rows="4" placeholder="Type your comment here..."></textarea>
+        <label for="refer-source">How Did You Hear About Us?</label>
+        <select id="refer-source" name="refer-source" required>
+          <option value="">Select an option</option>
+          <option value="Google">Google</option>
+          <option value="Facebook">Facebook</option>
+          <option value="Instagram">Instagram</option>
+          <option value="YouTube">YouTube</option>
+          <option value="LinkedIn">LinkedIn</option>
+          <option value="Other">Other</option>
+        </select>
+        <div class="error" id="referSourceError"></div>
 
-            <div class="terms-container">
-              <input type="checkbox" id="terms" name="terms" required>
-              <label for="terms">I agree to receive course updates and offers, with the option to unsubscribe anytime.</label>
-            </div>
-            
-            <button type="submit">Submit</button>
-        </form>
+        <label for="comments">Additional Comments (Optional)</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Type your comment here..."></textarea>
+
+        <div class="terms-container">
+          <input type="checkbox" id="terms" name="terms" required>
+          <label for="terms">I agree to receive course updates and offers, with the option to unsubscribe
+            anytime.</label>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
     </section>
-</main>
-
 
     <section class="contact-info">
       <h3>BigDrop Academy</h3>
