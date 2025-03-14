@@ -84,7 +84,7 @@ nav ul ul li a {
   color: white;
 }
 
-nav ul li:hover > ul {
+nav ul li:hover>ul {
   display: block;
 }
 
@@ -302,6 +302,8 @@ footer {
   text-align: center;
   padding: 10px 20px;
   width: 100%;
+  position: relative;
+  z-index: 0;
 }
 
 footer p {
@@ -459,7 +461,7 @@ footer p {
 }
 
 /* Main Menu Styling */
-.sitemap-list > li {
+.sitemap-list>li {
   font-size: 1.6rem;
   font-weight: bold;
   color: #343a40;
@@ -531,6 +533,9 @@ footer p {
 /* Contact Us Page */
 .contact-page {
   background-color: #fafdff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Contact Us Title Section */
@@ -564,6 +569,10 @@ footer p {
   border-radius: 8px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   border: 2px solid #ccc;
+}
+
+.contact-form {
+  flex-grow: 1;
 }
 
 .contact-form label {
@@ -621,11 +630,13 @@ footer p {
 
 /* Contact Information Styling */
 .contact-info {
+  width: 100%;
   text-align: center;
-  margin-top: 60px;
   background-color: #E5E3D4;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 8px 8px 0 0;
+  position: relative;
+  z-index: 1;
 }
 
 .contact-info h3 {
@@ -732,10 +743,10 @@ p,
 }
 
 #course-header-img {
-  display: block; /* Ensures it behaves as a block element */
-  margin: 100px auto 10px; /* Centers it horizontally and adds spacing */
-  max-width: 250px; /* Adjust the size as needed */
-  height: 200px; /* Keeps aspect ratio */
+  display: block;
+  margin: 100px auto 10px;
+  max-width: 250px;
+  height: 200px;
 }
 
 #course-title {
@@ -774,7 +785,7 @@ p,
   background-color: #e1ad01;
 }
 
-/* Optional: Adjust active tab */
+/* Adjust active tab */
 .tab-menu .tab-button.active {
   background-color: #c89600;
   color: white;
@@ -913,7 +924,6 @@ p,
   border-radius: 8px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   border: 2px solid #ccc;
-  /* Adds border around the form */
 }
 
 #registration label {
@@ -957,14 +967,14 @@ p,
 
 .terms-container a {
   display: inline-block;
-  margin-left: 4px; /* Adjust as needed */
+  margin-left: 4px;
 }
 
 #registration .terms-container label {
   position: relative;
   top: -5px;
   font-size: 0.8rem;
-  white-space: nowrap; /* Ensures the text does not wrap incorrectly */
+  white-space: nowrap;
 }
 
 #registration input[type="checkbox"] {
@@ -1220,12 +1230,12 @@ p,
 
 .course-item img {
   width: 100%;
-  max-width: 200px; /* Limits image width */
-  height: auto; /* Maintains aspect ratio */
+  max-width: 200px;
+  height: auto;
   border-radius: 8px;
-  object-fit: contain; /* Ensures full image is visible */
+  object-fit: contain;
   display: block;
-  margin: 0 auto; /* Centers the image */
+  margin: 0 auto;
 }
 
 /* Thank You page */
@@ -1234,7 +1244,7 @@ p,
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 70vh; /* Adjust based on header/footer height */
+  height: 70vh;
   text-align: center;
 }
 
@@ -1256,7 +1266,7 @@ p,
 /* Lead Registration Page Styling */
 .lead-title {
   max-width: 800px;
-  margin: 80px auto 40px; /* Matched spacing with contact-title */
+  margin: 80px auto 40px;
   padding: 20px;
   text-align: center;
 }
@@ -1325,9 +1335,9 @@ p,
   width: 100%;
 }
 
-/* ✅ Adjusts the label text size and alignment */
+/* Adjusts the label text size and alignment */
 .terms-container label {
-  font-size: 0.8rem; /* Slightly smaller text */
+  font-size: 0.8rem;
   line-height: 1.2;
   cursor: pointer;
   display: flex;
@@ -1336,7 +1346,7 @@ p,
 }
 
 
-/* ✅ Ensure checkbox stays aligned */
+/* Ensure checkbox stays aligned */
 .terms-container input[type="checkbox"] {
   width: 16px;
   height: 16px;
@@ -1366,26 +1376,23 @@ p,
   color: white;
 }
 
-/* ✅ Error message styling */
+/* Error message styling */
 .error {
   color: red;
   font-size: 0.8rem;
   font-weight: bold;
   margin-top: 5px;
   display: block;
-  clear: both; /* Ensures the error appears below */
+  clear: both;
 }
 
-
-
 /* Admin page */
-/* Center the H1 Title */
 .admin-container h1 {
   font-size: 2.5rem;
   font-weight: bold;
   color: #333;
   text-align: center;
-  margin-top: 100px; /* Set margin top */
+  margin-top: 100px;
   margin-bottom: 20px;
 }
 
@@ -1405,8 +1412,6 @@ p,
   border-radius: 5px;
 }
 
-
-
 /* Table Container */
 .table-container {
   overflow-x: auto;
@@ -1417,7 +1422,7 @@ p,
 
 /* Table */
 .table-container table {
-  width: 80%; /* Reduced width */
+  width: 80%;
   border-collapse: collapse;
   border: 1px solid #ccc;
   background-color: white;
@@ -1435,7 +1440,7 @@ p,
   font-weight: bold;
   text-align: center;
   border: 1px solid #ccc;
-  white-space: nowrap; /* Prevents unwanted wrapping */
+  white-space: nowrap;
 }
 
 /* Table Body */
@@ -1444,12 +1449,12 @@ p,
   font-size: 14px;
   border: 1px solid #ccc;
   text-align: left;
-  white-space: nowrap; /* Prevents wrapping */
+  white-space: nowrap;
 }
 
 /* Allow Wrapping in Course & Comments */
-.table-container td:nth-child(5), /* Course */
-.table-container td:nth-child(9) { /* Comments */
+.table-container td:nth-child(5),
+.table-container td:nth-child(9) {
   white-space: normal;
   word-break: break-word;
   max-width: 200px;
@@ -1462,7 +1467,7 @@ p,
 
 /* Edit Button (Green) */
 .edit-btn {
-  background-color: #28a745; /* Bootstrap Green */
+  background-color: #28a745;
   color: white;
   border: none;
   padding: 6px 12px;
@@ -1473,12 +1478,12 @@ p,
 }
 
 .edit-btn:hover {
-  background-color: #218838; /* Darker Green */
+  background-color: #218838;
 }
 
 /* Delete Button (Darker Red) */
 .delete-btn {
-  background-color: #b22222; /* Firebrick Red */
+  background-color: #b22222;
   color: white;
   border: none;
   padding: 6px 12px;
@@ -1489,7 +1494,7 @@ p,
 }
 
 .delete-btn:hover {
-  background-color: #8b0000; /* Darker Red */
+  background-color: #8b0000;
 }
 
 /* Add Lead Button - Right Aligned */
@@ -1501,17 +1506,17 @@ p,
 }
 
 .add-btn {
-  background-color: white; /* White background */
-  color: #0073e6; /* Blue text */
-  border: 2px solid #0073e6; /* Blue border */
-  padding: 6px 12px; /* Same padding as Edit/Delete buttons */
-  font-size: 14px; /* Same font size */
-  border-radius: 4px; /* Same border radius */
+  background-color: white;
+  color: #0073e6;
+  border: 2px solid #0073e6;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 4px;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
 .add-btn:hover {
-  background-color: #0073e6; /* Blue background on hover */
-  color: white; /* White text on hover */
+  background-color: #0073e6;
+  color: white;
 }
