@@ -1,4 +1,4 @@
-// ✅ JavaScript for Home Page - Alumni Testimonial Section
+// JavaScript for Home Page - Alumni Testimonial Section
 document.addEventListener("DOMContentLoaded", function () {
     const container = document.querySelector(".testimonial-container");
     const testimonials = document.querySelectorAll(".testimonial");
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-// ✅ jQuery for Course Listing & Course Pages
+// jQuery for Course Listing & Course Pages
 $(document).ready(function () {
     // Course Listing Page: Handle tab selection & filtering
     $(".filter-button").click(function () {
@@ -74,7 +74,7 @@ $(document).ready(function () {
     });
 });
 
-// ✅ Lead Registration Form Validation & Submission
+// Lead Registration Form Validation & Submission
 document.getElementById("leadForm").addEventListener("submit", function (e) {
     e.preventDefault();
     let isValid = true;
